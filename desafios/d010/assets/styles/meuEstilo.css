@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: droid;
+    src: url(../font/idroid.otf);
+}
+
+* {
+    font: normal 1.8rem Arial, Helvetica, sans-serif; 
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    --branco: white;
+    --preto: black;
+    --fundo: #0118E6;
+    --especial: #2432B3;
+    --azul--escuro: #2a3496;
+    --azul--claro: #7a89df;
+
+}
+
+
+/* fontes */
+
+
+
+/* HEADER */
+.cabecalho {
+    background: linear-gradient(0deg,var(--azul--escuro),var(--fundo),var(--azul--claro));
+    color: var(--branco);
+    padding: 2rem 0 1rem;
+    text-align: center;
+}
+
+.cabecalho__titulo {
+    font-size: 3.6rem;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.cabecalho__slogan {
+    font-size: 1.6rem;
+    margin: 2.5rem 0 3rem;
+}
+
+.nav__lista {
+    display: flex;
+}
+
+.nav__item {
+    margin-left: 1rem ;
+    transition: 1.5s;
+}
+
+.nav__item:hover {
+    transform: scale(1.1); 
+
+}
+
+
+.nav__link {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--branco);
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 1rem;
+} 
+
+.nav__link:hover {
+    color: var(--preto);
+    background: var(--azul--claro);
+    border: 2px solid white;
+}
+
+/* MAIN */
+.conteudo-principal {
+    background-color: var(--azul--claro);
+    padding-bottom: 2rem;
+}
+
+.conteudo {
+    width: 70%;
+    margin: 0 auto;
+    background: var(--branco);
+    padding: 2.5rem 2rem 1.8rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+}
+
+.conteudo__tema, .conteudo__subtitulo {
+    font-size: 3.2rem;
+    font-family: 'droid';
+    color: var(--azul--escuro);
+    
+}
+
+.conteudo__subtitulo {
+    background: linear-gradient(90deg ,var(--azul--claro),var(--branco));
+    font-size: 2.4rem;
+    padding: .25rem 1rem;
+}
+
+.conteudo  p {
+    text-indent: 2.5rem;
+    margin: 2rem 0;
+}
+
+.conteudo strong, .conteudo a {
+    text-decoration: none;
+    color: var(--fundo);
+}
+
+.conteudo a::after {
+    content: '\1F517';
+}
+
+picture img {
+    width: 100%;
+}
+
+.conteudo__bugdroid-container {
+    margin: 0 auto;
+    max-width: 38rem;
+}
+
+.conteudo__bugdroid {
+    width: 100%;
+}
+
+.conteudo__video {
+    background: var(--fundo);
+    padding: 2rem;
+    padding-bottom: 56.7%;
+    margin: 0 -2rem;
+    position: relative;
+}
+
+.conteudo__video iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+
+/* EXTRA */
+.extra {
+    background: var(--azul--claro);
+    margin-top: 2rem;
+    border-radius: 1.5rem;
+}
+
+.extra__header {
+    color: var(--branco);
+    font-size: 2rem;
+    background: var(--azul--escuro);
+    padding: 1.6rem;
+    border-radius: 1.5rem 1.5rem 0rem 0rem
+}
+
+.extra__main {
+    padding:  0 1.5rem 1.5rem
+}
+
+.extra__lista {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 18rem;
+}
+
+.extra__lista li::before {
+    content: '\1F5F8';
+    margin-right: 1rem;
+}
+
+.rodape {
+    background-color: var(--azul--escuro);
+    color: var(--branco);
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+
+.rodape a {
+    color: var(--branco);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+
+/* responsivo */
+
+@media (max-width: 600px){
+    
+    .nav__lista {
+        flex-direction: column;
+        row-gap: 2.5em;
+    }
+
+    .nav__item {
+        margin-left: 1rem;
+    }
+    
+    .extra__lista {
+        flex-flow: column nowrap;
+        height: auto;
+    }
+}
