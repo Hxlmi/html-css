@@ -6,7 +6,8 @@
 }
 
 * {
-    font: normal 1.8rem Arial, Helvetica, sans-serif; 
+    font: normal 1.8rem Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 :root {
@@ -47,6 +48,7 @@
 
 .nav__lista {
     display: flex;
+    align-items: center;
 }
 
 .nav__item {
@@ -202,17 +204,21 @@ picture img {
     }
 
     .nav__item {
-        margin-left: 0.3rem;
+        margin: 0;
     }
     
+    .nav__link{
+        padding: 0.5rem;
+    }
+
     .conteudo-principal{
         padding-bottom: 0;
     }
 
     .conteudo{
         width: 100%;
-        padding: 0;
-        border-radius: none;
+        padding: 0px 5px;
+        border-radius: 0;
     }
 
     .extra__lista {
