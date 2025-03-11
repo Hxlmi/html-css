@@ -51,7 +51,7 @@
 
 .nav__item {
     margin-left: 1rem ;
-    transition: 1.5s;
+    transition: .7s;
 }
 
 .nav__item:hover {
@@ -78,7 +78,7 @@
 /* MAIN */
 .conteudo-principal {
     background-color: var(--azul--claro);
-    padding-bottom: 2rem;
+    padding-bottom: 5rem;
 }
 
 .conteudo {
@@ -197,16 +197,24 @@ picture img {
 /* responsivo */
 
 @media (max-width: 600px){
-    
-    .nav__lista {
-        flex-direction: column;
-        row-gap: 2.5em;
+    .nav__lista{
+        justify-content: center;
     }
 
     .nav__item {
-        margin-left: 1rem;
+        margin-left: 0.3rem;
     }
     
+    .conteudo-principal{
+        padding-bottom: 0;
+    }
+
+    .conteudo{
+        width: 100%;
+        padding: 0;
+        border-radius: none;
+    }
+
     .extra__lista {
         flex-flow: column nowrap;
         height: auto;
