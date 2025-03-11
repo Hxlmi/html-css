@@ -3,8 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imagem Flexível</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body{
+            text-align: center;
+        }
+        /* .img{
+            width: 90%;
+            margin: auto;
+            display: block;
+        } */
+    </style>
+    <title>Imagem Flexível</title>
 </head>
 <body>
     <h1>Imagem Flexível</h1>
@@ -12,7 +22,7 @@
     <picture>
         <source media="(min-width: 1705px)" srcset="imagens/paisagem-g.png">
         <source media="(min-width: 1050px)" srcset="imagens/paisagem-m.png">
-        <img src="imagens/paisagem-p.png" alt="">
+        <img src="imagens/paisagem-p.png" alt="" class="img"> <!--aqui deu pra colocar uma classes que fez alterção em todas as imagens-->
     </picture>
 </body>
 </html>

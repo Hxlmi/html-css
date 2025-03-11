@@ -13,7 +13,7 @@
 
             .espaco {
                 background-image: url(imagens/espaco.jpg);
-                background-repeat: no-repeat;
+                background-repeat: repeat;
                 background-position: center;
                 background-size: cover;
                 
@@ -28,6 +28,20 @@
 
             .astronauta {
                 width: 30%;
+                animation: caindo 5s ease-in-out 2;
+                /* animation-name: caindo;
+                animation-duration: 2s;
+                animation-timing-function: ease;
+                animation-iteration-count: 1; */
+            }
+
+            @keyframes caindo{
+                from{
+                    width: 30%
+                }
+                to{
+                    width: 0%
+                }
             }
 
 
