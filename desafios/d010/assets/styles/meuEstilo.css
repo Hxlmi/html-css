@@ -133,8 +133,7 @@ picture img {
 
 .conteudo__video {
     background: var(--fundo);
-    padding: 2rem;
-    padding-bottom: 56.7%;
+    padding: 2rem 2rem 56.7%;
     margin: 0 -2rem;
     position: relative;
 }
@@ -221,6 +220,9 @@ picture img {
         border-radius: 0;
     }
 
+    .conteudo__video{
+        margin: 0 -0.5rem;
+    }
     .extra__lista {
         flex-flow: column nowrap;
         height: auto;
